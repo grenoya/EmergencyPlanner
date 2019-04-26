@@ -264,7 +264,7 @@ class Planning(object):
     def addHolidays(self, title="New Holidays",
                     startday=date.max, starttime="AM",
                     endday=date.max, endtime="PM"):
-        holday = Holidays(title=title, self.cal,
+        holday = Holidays(self.cal, title=title,
                      startday=date.max, starttime="AM",
                      endday=date.max, endtime="PM")
         self.holidays.append(holday)
